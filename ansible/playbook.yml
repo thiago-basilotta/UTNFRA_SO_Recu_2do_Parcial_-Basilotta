@@ -1,0 +1,25 @@
+---
+- hosts: all
+  become: true
+
+  tasks:
+    - include_role:
+        name: 2PRecuperatorio
+
+    - include_role:
+        name: Crea_Carpetas_Basilotta
+
+    - include_role:
+        name: Cambia_Propiedad_Basilotta
+
+    - include_role:
+        name: Sudoers_Basilotta
+
+    - name: "Finalización del archivo playbook"
+      debug:
+        msg: "Todos los roles fueron ejecutados correctamente"
+
+
+
+
+

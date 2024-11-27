@@ -1,0 +1,21 @@
+---
+# Tareas para crear la estructura de carpetas UTN/Alumno y UTN/Profesor
+
+- name: Crear directorio UTN
+  file:
+    path: /UTN
+    state: directory
+    mode: '0755'
+
+- name: Crear subdirectorio Alumno dentro de UTN
+  file:
+    path: /UTN/Alumno
+    state: directory
+    mode: '0755'
+
+- name: Crear subdirectorio Profesor dentro de UTN
+  file:
+    path: /UTN/Profesor
+    state: directory
+    mode: '0755'
+

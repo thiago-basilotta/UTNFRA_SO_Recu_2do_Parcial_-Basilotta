@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    web:
+      image: thiagobasilotta/web2-basilotta:latest  
+      ports:
+        - "81:80"
+      volumes:
+        - ./web/file:/usr/share/nginx/html/file
